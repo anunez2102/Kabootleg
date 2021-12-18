@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Moo+Lah+Lah&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.counter {
+    font-family: 'Moo Lah Lah', cursive;
+    position: fixed;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.counter.hide {
+    transform: translate(-50%, -50%) scale(0);
+    animation: hide .2s ease-out;
+}
+
+@keyframes hide {
+    0% {
+        transform:translate(-50%, -50%) scale (1);
+    }
+}
+.final {
+    position: fixed;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}

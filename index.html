@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="js/style.css">
+    <link rel="stylesheet" href="css/styles.css">
     <title>Kabootleg</title>
 </head>
 
@@ -16,10 +16,20 @@
             <h3>Instructions: Select a category and answer questions correctly.</h3>
             <h3>You have 10 seconds to guess!</h3>
         </div>
-        <button onclick="game.start()">START</button>
-        
+        <div class="counter">
+            <div class="nums">
+                <span class="in">3</span>
+                <span>2</span>
+                <span>1</span>
+            </div>
+        </div>
     </div>
-    <script src="css/script.js" defer></script>
+
+    <div class="final">
+        <h2>Ready to play!</h2>
+        <button id="ready">READY</button>
+    </div>
+    <script src="js/script.js" defer></script>
 </body>
 
 </html>

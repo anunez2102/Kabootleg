@@ -45,7 +45,7 @@ const quizData = [
         b: "Domain Object Markup",
         c: "Document Object Manipulation",
         d: "Document Object Model",
-        correct: "",
+        correct: "d",
     },
 ];
 

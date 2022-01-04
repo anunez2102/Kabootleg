@@ -3,6 +3,9 @@ const counter = document.querySelector('.counter')
 const finalMessage = document.querySelector('.final')
 const replay = document.querySelector('#replay')
 
+const fName = document.querySelector('#fname');
+const prompt = document.querySelector('#name-prompt');
+
 runAnimation()
 
 function resetDOM() {
@@ -46,6 +49,30 @@ const quizData = [
         c: "Document Object Manipulation",
         d: "Document Object Model",
         correct: "d",
+    },
+    {
+        question: "Which tag creates a numbered list?",
+        a: "<ul>",
+        b: "<li>",
+        c: "<nl>",
+        d: "<list>",
+        correct: "b",
+    },
+    {
+        question: "Which tag will place the text “Kabootleg” at the top of the browser?",
+        a: "<html>",
+        b: "<head>",
+        c: "<title>",
+        d: "<body>",
+        correct: "c"
+    },
+    {
+        question: "The link to your CSS file belong in which section?",
+        a: "<html>",
+        b: "<head>",
+        c: "<title>",
+        d: "<body>",
+        correct: "b"
     },
 ];
 

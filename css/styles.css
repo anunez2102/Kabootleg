@@ -10,7 +10,7 @@ h1 {
     color: #c53535;
     font-family: 'Moo Lah Lah', cursive;
     font-size: 77px;
-    margin: 7px;
+    margin: 10px;
     text-transform: uppercase;
 }
 
@@ -28,6 +28,10 @@ body {
     height: 100vh;
     margin: 0;
     overflow: hidden;
+}
+
+#player-container {
+    margin: 40px 0;
 }
 
 .counter {
@@ -60,9 +64,10 @@ h2 {
 }
 
 .final {
+    display: none;
     position: fixed;
     top: 60%;
-    left: 48%;
+    left: 40%;
     transform: translate(-50%, -50%) scale (0);
     text-align: center;
 }
@@ -137,7 +142,16 @@ h2 {
     }
 }
 
-.quiz-container {
+.category {
+    padding: 0;
+    margin:0;
+    display: flex;
+    justify-content: center;
+}
+
+.quiz-container, 
+.results {
+    display: none;
     background-color: white;
     border-radius: 10px;
     box-shadow: 0 0 10px 2px rgba( 100, 100, 100, 0.1);
@@ -157,23 +171,28 @@ h2 {
 .quiz-header .timer .time_text {
     font-weight: bold;
     font-size: 17px;
+    user-select: none;
 }
 
 .score {
     background-color: cornflowerblue;
     font-weight: bold;
     font-size: 17px;
-    width: 85px
+    width: 85px;
 }
 
 h4 {
     padding: 1rem;
     text-align: center;
     margin: 0;
+    font-family: 'Fira Sans';
+    font-size: 22px;
 }
 
 ul {
     list-style-type: none;
+    position: relative;
+    display: block;
     padding: 0;
 }
 
@@ -195,7 +214,8 @@ button {
     cursor: pointer;
     font-size: 1.1rem;
     font-family: inherit;
-    padding: 1.3rem;
+    padding: .4rem;
+    margin: 10px 0;
 }
 
 button:hover {

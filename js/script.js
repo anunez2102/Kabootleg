@@ -3,9 +3,6 @@ const counter = document.querySelector('.counter')
 const finalMessage = document.querySelector('.final')
 const replay = document.querySelector('#replay')
 
-const fName = document.querySelector('#fname');
-const prompt = document.querySelector('#name-prompt');
-
 runAnimation()
 
 function resetDOM() {
@@ -36,10 +33,30 @@ function runAnimation() {
     })
 }
 
+const playerNameSubmitBtn = document.getElementsByID('submit-button')
+
+playerNameSubmitBtn.addEventListener('click', runAnimation)
+
 replay.addEventListener('click', () => {
     resetDOM()
     runAnimation()
 })
+
+const htmlButton = document.getElementsByID('html-btn')
+htmlButton.addEventListener('click', startGame)
+function startGame() {
+    console.log ('Yay!')
+}
+
+function nextQuestion() {
+
+}
+
+function selectAnswer() {
+
+}
+
+
 
 const quizData = [
     {
